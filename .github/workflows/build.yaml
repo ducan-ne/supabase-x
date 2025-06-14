@@ -17,7 +17,7 @@ jobs:
       matrix:
         image: ["ghcr.io/ducan-ne/supabase-x"]
         include:
-          - image: "ghcr.io/ducan-ne/supabase-x"
+          - image: "ghcr.io/ducan-ne/supabase-postgres"
             context: "{{defaultContext}}:postgres"
             tagFrom: "./postgres/Dockerfile"
     runs-on: ubuntu-latest
