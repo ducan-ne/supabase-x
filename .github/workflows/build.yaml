@@ -15,9 +15,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        image: ["ghcr.io/6ixfalls/supabase-postgres"]
+        image: ["ghcr.io/ducan-ne/supabase-x"]
         include:
-          - image: "ghcr.io/6ixfalls/supabase-postgres"
+          - image: "ghcr.io/ducan-ne/supabase-x"
             context: "{{defaultContext}}:postgres"
             tagFrom: "./postgres/Dockerfile"
     runs-on: ubuntu-latest
