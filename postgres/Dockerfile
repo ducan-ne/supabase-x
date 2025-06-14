@@ -1,4 +1,4 @@
-FROM supabase/postgres:17.4.1.043
+FROM --platform=linux/amd64 supabase/postgres:17.4.1.043
 
 
 
