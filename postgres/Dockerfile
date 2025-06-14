@@ -1,5 +1,7 @@
 FROM supabase/postgres:17.4.1.043
 
+
+
 ADD ./realtime.sql /docker-entrypoint-initdb.d/migrations/99-realtime.sql
 ADD ./webhooks.sql /docker-entrypoint-initdb.d/init-scripts/98-webhooks.sql
 ADD ./roles.sql /docker-entrypoint-initdb.d/init-scripts/99-roles.sql
